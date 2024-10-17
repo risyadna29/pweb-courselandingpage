@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    background: #03254c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: lightskyblue;
+}
+
+h1 strong {
+    color: whitesmoke   ;
+}
+
+h2 {
+    padding: 10px;
+    padding-left: 0;
+    color: whitesmoke;
+}
+
+h3 {
+    color: gray;
+}
+
+h3 strong {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #5673C8;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0px - 18px;
+    padding: 8px;
+}
+
+.row>.column {
+    padding: 6px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    position: relative;
+    transition: all 0.3 ease;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}   
+
+.content {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+}
+    
+.judul {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 15%;
+    background-color: #5673C8;
+}
+
+.judul2 {
+    padding: 10px;
+    padding-left: 0;
+}
+
+.payment {
+    text-align: center;
+    background: #191970;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: #03254c;
+    justify-content: right;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: small;
+}
+
+.active {
+    background-color: #191970;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.payment2 {
+    text-align: center;
+    background: #191970;
+    color: #888888;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #5673C8;
+    padding: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
